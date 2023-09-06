@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GalaxyBoyz official</title>
-  <script type="module" crossorigin src="/galaxyboyz/assets/swiper-bundle-960a0481.js"></script>
-  <link rel="stylesheet" href="/galaxyboyz/assets/swiper-bundle-e5ce129e.css">
+  <script type="module" crossorigin src="/galaxyboyz/assets/tooltips-5b8c303c.js"></script>
+  <link rel="stylesheet" href="/galaxyboyz/assets/tooltips-b9cd7a57.css">
 </head>
 
 <body>
@@ -296,13 +296,14 @@
                   </div>
                 </div>
                 <div class="col-lg-2 col-md-3">
-                  <button class="btn btn-primary text-white w-100" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-title="sold out">buy ticktets</button>
+                  <span class="d-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="sold out">
+                    <button class="btn btn-primary text-white w-100" disabled>buy ticktets</button>
+                  </span>
                 </div>
               </div>
             </li>
           </ul>
-          <button class="btn btn-outline-primary col-12 col-lg-2 col-md-4 d-grid mx-auto">more</button>
+          <a href="shows.html" class="btn btn-outline-primary col-12 col-lg-2 col-md-4 d-grid mx-auto">more</a>
         </div>
       </section>
       <section class="whats-good-music py-7 py-lg-10 py-md-8 bg-dark">
@@ -403,7 +404,7 @@
             </li>
           </ul>
           <button class="btn btn-primary d-grid col-12 col-lg-2 col-md-4 mx-auto text-white mb-8">more</button>
-          <div class="align-items-end row pt-5 pb-8 row-cols-1 gy-5">
+          <div class="align-items-end row pt-5 pb-8 row-cols-1 row-cols-lg-2 gy-5">
             <div class="col">
               <h3 class="fs-1">SUBSCRIBE</h3>
               <p>receive updates on new music, show dates, special merch & more.</p>
