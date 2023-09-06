@@ -17,12 +17,23 @@ footer{
 }
 .hero{
     background: center / cover no-repeat url(../images/days-of-our-lives.png);
-    height: calc(100vh - 54px);
+    height: calc(100vh - 64px);
+    margin-bottom: 64px;
+    @include media-breakpoint-up(lg){
+        background: 0% 20% / cover no-repeat url(../images/days-of-our-lives.png);
+        height: calc(100vh - 54px);
+        margin-bottom: 54px;
+    }
+    @include media-breakpoint-up(md){
+        background: top / cover no-repeat url(../images/days-of-our-lives.png);
+    }
 }
 .whats-news{
     .card-img-sm{
-        width: 86px;
-        height: 86px;
+        @include media-breakpoint-up(md){
+            width: 86px;
+            height: 86px;
+        }
     }
 }
 .info{

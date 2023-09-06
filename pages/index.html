@@ -9,23 +9,23 @@
 </head>
 
 <body>
-  <%- include('./layout/header-dark'); -%>
-    <main>
-      <section class="hero">
-        <div class="container h-100">
-          <div class="align-items-center d-flex flex-column h-100 justify-content-center">
-            <h2 class="fs-1 mb-5 fw-normal">the new record out now</h2>
+  <main>
+    <section class="hero">
+      <div class="container-fluid h-100">
+        <div class="align-items-center d-flex flex-column h-100 justify-content-center">
+          <h2 class="fs-1 mb-5 fw-normal">the new record out now</h2>
             <h1 class="display-1 fw-bold mb-5">Days Of Our Lives</h1>
-            <a href="music.html" class="btn btn-dark col-3 d-grid mx-auto">buy / listen</a>
+            <a href="music.html" class="btn btn-dark col-auto col-md-3 d-grid mx-auto">buy / listen</a>
           </div>
         </div>
+        <%- include('./layout/header-dark'); -%>
       </section>
-      <section class="whats-news py-10">
+      <section class="whats-news py-7 py-lg-10 py-md-8">
         <div class="container">
-          <h2 class="fs-1 mb-8">what’s news</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <h3 class="border-bottom h2 pb-5 mb-5">featured</h3>
+          <h2 class="mb-md-8 mb-5">what’s news</h2>
+          <div class="row gy-md-5 gy-8">
+            <div class="col-lg-4 col-md-12">
+              <h3 class="border-bottom h2 pb-md-5 mb-5">featured</h3>
               <div class="card position-relative">
                 <img src="../assets/images/news/news-1.jpeg" class="card-img-top mb-5"
                   alt="GalaxyBoyz Launches Stellar World Tour">
@@ -37,21 +37,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <h3 class="border-bottom h2 pb-5 mb-5">news</h3>
+            <div class="col-lg-4 col-md-6">
+              <h3 class="border-bottom h2 pb-md-5 mb-5">news</h3>
               <ul class="flex-column gy-5 list-unstyled mb-0 row">
                 <li>
                   <div class="border-bottom card pb-5 position-relative">
                     <div class="row gx-5">
                       <div class="col-md-auto">
-                        <img src="../assets/images/news/news-2.jpeg" class="card-img-sm img-fluid object-fit-cover"
+                        <img src="../assets/images/news/news-2.jpeg" class="card-img-sm mb-5 img-fluid object-fit-cover"
                           alt="Intergalactic Album Release: 'Stellar Odyssey' Takes Off">
                       </div>
                       <div class="col-md">
                         <div class="card-body p-0">
                           <h4 class="card-title mb-0 fw-semibold fs-5">Intergalactic Album Release: 'Stellar Odyssey'
                             Takes Off</h4>
-                          <p class="card-text fs-8 mb-5">December 12, 2023</p>
+                          <p class="card-text fs-8 mb-md-5">December 12, 2023</p>
                           <p class="card-text"><small class="text-body-secondary ">GalaxyBoyz's highly anticipated album
                               'Stellar Odyssey' hits the airwaves, inviting listeners on a sonic journey through the
                               cosmos.</small></p>
@@ -65,7 +65,7 @@
                   <div class="border-bottom card pb-5 position-relative">
                     <div class="row gx-5">
                       <div class="col-md-auto">
-                        <img src="../assets/images/news/news-3.jpeg" class="card-img-sm img-fluid object-fit-cover"
+                        <img src="../assets/images/news/news-3.jpeg" class="card-img-sm mb-5 img-fluid object-fit-cover"
                           alt="Starlit Collaboration: GalaxyBoyz Teams Up with Celestial Vocalist"
                           style="object-position:right">
                       </div>
@@ -73,7 +73,7 @@
                         <div class="card-body p-0">
                           <h4 class="card-title mb-0 fw-semibold fs-5">Starlit Collaboration: GalaxyBoyz Teams Up with
                             Celestial Vocalist</h4>
-                          <p class="card-text fs-8 mb-5">December 7, 2023</p>
+                          <p class="card-text fs-8 mb-md-5">December 7, 2023</p>
                           <p class="card-text"><small class="text-body-secondary ">The music universe aligns as
                               GalaxyBoyz collaborates with a renowned celestial vocalist, bringing a blend of ethereal
                               and earthly voices together.</small></p>
@@ -87,14 +87,14 @@
                   <div class="border-bottom card pb-5 position-relative">
                     <div class="row gx-5">
                       <div class="col-md-auto">
-                        <img src="../assets/images/news/news-4.jpeg" class="card-img-sm img-fluid object-fit-cover"
+                        <img src="../assets/images/news/news-4.jpeg" class="card-img-sm mb-5 img-fluid object-fit-cover"
                           alt="Cosmic Chari">
                       </div>
                       <div class="col-md">
                         <div class="card-body p-0">
                           <h4 class="card-title mb-0 fw-semibold fs-5">Cosmic Charity Concert: GalaxyBoyz Lights Up the
                             Stage for a Cause</h4>
-                          <p class="card-text fs-8 mb-5">November 1, 2023</p>
+                          <p class="card-text fs-8 mb-md-5">November 1, 2023</p>
                           <p class="card-text"><small class="text-body-secondary ">GalaxyBoyz spreads their positive
                               energy to a charitable event, using their music to make a difference in the lives of those
                               in need.</small></p>
@@ -106,14 +106,14 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-4">
-              <h3 class="border-bottom h2 pb-5 mb-5">blog</h3>
+            <div class="col-lg-4 col-md-6">
+              <h3 class="border-bottom h2 pb-md-5 mb-5">blog</h3>
               <ul class="flex-column gy-5 list-unstyled mb-0 row">
                 <li>
                   <div class="border-bottom card pb-5 position-relative">
                     <div class="card-body p-0">
                       <h4 class="card-title mb-0 fw-semibold fs-5">I lost my wallet, please help me 😫</h4>
-                      <p class="card-text fs-8 mb-5">May 5, 2021</p>
+                      <p class="card-text fs-8 mb-md-5">May 5, 2021</p>
                       <p class="card-text"><small class="text-body-secondary ">Day 3: Wallet MIA! SOS! Who knew shopping
                           could turn into a treasure hunt? 🕵️‍♂️</small></p>
                       <a href="#" class="stretched-link"></a>
@@ -124,7 +124,7 @@
                   <div class="border-bottom card pb-5 position-relative">
                     <div class="card-body p-0">
                       <h4 class="card-title mb-0 fw-semibold fs-5">bad bad bad badbad bad trip</h4>
-                      <p class="card-text fs-8 mb-5">March 3, 2021</p>
+                      <p class="card-text fs-8 mb-md-5">March 3, 2021</p>
                       <p class="card-text"><small class="text-body-secondary ">Note to Self: Never trust GPS-blindfolded
                           llama tours again. Worst. Trip. Ever. 🦙🌵</small></p>
                       <a href="#" class="stretched-link"></a>
@@ -135,7 +135,7 @@
                   <div class="border-bottom card pb-5 position-relative">
                     <div class="card-body p-0">
                       <h4 class="card-title mb-0 fw-semibold fs-5">I lost my job</h4>
-                      <p class="card-text fs-8 mb-5">January 27, 2021</p>
+                      <p class="card-text fs-8 mb-md-5">January 27, 2021</p>
                       <p class="card-text"><small class="text-body-secondary ">Dear Diary, Today my job decided to ghost
                           me. Time to upgrade life's playlist! 🎵🕺</small></p>
                       <a href="#" class="stretched-link"></a>
@@ -146,7 +146,7 @@
                   <div class="border-bottom card pb-5 position-relative">
                     <div class="card-body p-0">
                       <h4 class="card-title mb-0 fw-semibold fs-5">I got my job</h4>
-                      <p class="card-text fs-8 mb-5">January 20, 2021</p>
+                      <p class="card-text fs-8 mb-md-5">January 20, 2021</p>
                       <p class="card-text"><small class="text-body-secondary ">Entry #1: Confetti dance! Snagged the job
                           – officially adulting like a pro now. 🎉💼</small></p>
                       <a href="#" class="stretched-link"></a>
@@ -159,14 +159,14 @@
         </div>
         </div>
       </section>
-      <section class="whats-good-shows py-10 bg-light">
+      <section class="whats-good-shows py-7 py-lg-10 py-md-8 bg-light">
         <div class="container">
-          <h2 class="fs-1 mb-8">what’s news</h2>
-          <ul class="list-unstyled mb-8 row gy-8">
+          <h2 class="fs-1 mb-md-8 mb-5">what’s news</h2>
+          <ul class="list-unstyled mb-8 row gy-md-8 gy-5">
             <li>
-              <div class="border-bottom gx-0 justify-content-between pb-5 row">
+              <div class="border-bottom gx-0 justify-content-between pb-5 row text-center text-md-start gy-4">
                 <div class="col-md-8">
-                  <div class="justify-content-between row gx-0">
+                  <div class="justify-content-between row gx-0 gy-4">
                     <div class="col-md-2">
                       <p>AUG 12, 2023</p>
                     </div>
@@ -178,17 +178,16 @@
                       <p>TORONTO, ON</p>
                     </div>
                   </div>
-
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-3">
                   <button class="btn btn-primary text-white w-100">buy ticktets</button>
                 </div>
               </div>
             </li>
             <li>
-              <div class="border-bottom gx-0 justify-content-between pb-5 row">
+              <div class="border-bottom gx-0 justify-content-between pb-5 row text-center text-md-start gy-4">
                 <div class="col-md-8">
-                  <div class="justify-content-between row gx-0">
+                  <div class="justify-content-between row gx-0 gy-4">
                     <div class="col-md-2">
                       <p>AUG 13, 2023</p>
                     </div>
@@ -202,23 +201,23 @@
                   </div>
 
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-3">
                   <button class="btn btn-primary text-white w-100">buy ticktets</button>
                 </div>
               </div>
             </li>
           </ul>
-          <button class="btn btn-outline-primary d-grid col-2 mx-auto">more</button>
+          <button class="btn btn-outline-primary col-12 col-lg-2 col-md-4 d-grid mx-auto">more</button>
         </div>
       </section>
-      <section class="whats-good-music py-10 bg-dark">
+      <section class="whats-good-music py-7 py-lg-10 py-md-8 bg-dark">
         <div class="container">
           <h2 class="fs-1 mb-8 text-white">what’s news</h2>
-          <div class="flex-row-reverse row row-cols-md-2 row-cols-1">
+          <div class="flex-row-reverse row row-cols-md-2 row-cols-1 gy-5">
             <div class="col-md-6 col">
               <div class="position-relative">
                 <img class="img-fluid" src="../assets/images/days-of-our-lives.png" alt="days-of-our-lives">
-                <span class="badge music-badge-circle-lg position-absolute">Days Of Our Lives</span>
+                <span class="badge music-badge-circle-lg position-absolute d-md-none d-lg-block">Days Of Our Lives</span>
                 <a href="#" class="stretched-link"></a>
               </div>
             </div>
@@ -228,7 +227,7 @@
                   <div class="position-relative">
                     <img class="img-fluid object-fit-cover" src="../assets/images/stellar-resonance.png"
                       alt="stellar-resonance">
-                    <span class="badge music-badge position-absolute">Stellar Resonance</span>
+                    <span class="badge music-badge position-absolute d-md-none d-lg-block">Stellar Resonance</span>
                     <a href="#" class="stretched-link"></a>
                   </div>
                 </div>
@@ -236,7 +235,7 @@
                   <div class="position-relative">
                     <img class="img-fluid object-fit-cover" src="../assets/images/cosmic-riffs-and-melodies.png"
                       alt="cosmic-riffs-and-melodies">
-                    <span class="badge music-badge position-absolute">Cosmic Riffs and Melodies</span>
+                    <span class="badge music-badge position-absolute d-md-none d-lg-block">Cosmic Riffs and Melodies</span>
                     <a href="#" class="stretched-link"></a>
                   </div>
                 </div>
@@ -244,7 +243,7 @@
                   <div class="position-relative">
                     <img class="img-fluid object-fit-cover" src="../assets/images/galactic-groove-odyssey.png"
                       alt="galactic-groove-odyssey">
-                    <span class="badge music-badge position-absolute">Galactic Groove Odyssey</span>
+                    <span class="badge music-badge position-absolute d-md-none d-lg-block">Galactic Groove Odyssey</span>
                     <a href="#" class="stretched-link"></a>
                   </div>
                 </div>
@@ -252,7 +251,7 @@
                   <div class="position-relative">
                     <img class="img-fluid object-fit-cover" src="../assets/images/nebula-serenades.png"
                       alt="nebula-serenades">
-                    <span class="badge music-badge position-absolute">Nebula Serenades</span>
+                    <span class="badge music-badge position-absolute d-md-none d-lg-block">Nebula Serenades</span>
                     <a href="#" class="stretched-link"></a>
                   </div>
                 </div>
@@ -261,10 +260,10 @@
           </div>
         </div>
       </section>
-      <section class="whats-good-merch py-10">
+      <section class="whats-good-merch py-7 py-lg-10 py-md-8">
         <div class="container">
           <h2 class="fs-1 mb-8">what’s good merch</h2>
-          <ul class="row row-cols-md-3 list-unstyled mb-8">
+          <ul class="row row-cols-md-3 row-cols-1 gy-5 list-unstyled mb-8">
             <li class="col">
               <div class="card">
                 <img src="../assets/images/hanging-t-shirt-mockup.png" class="card-img-top"
@@ -308,19 +307,19 @@
               </div>
             </li>
           </ul>
-          <button class="btn btn-primary d-grid col-2 mx-auto text-white mb-8">more</button>
-          <div class="align-items-end row pt-5 pb-8">
+          <button class="btn btn-primary d-grid col-12 col-lg-2 mx-auto text-white mb-8">more</button>
+          <div class="align-items-end row pt-5 pb-8 row-cols-1 gy-5">
             <div class="col">
               <h3 class="fs-1">SUBSCRIBE</h3>
               <p>receive updates on new music, show dates, special merch & more.</p>
             </div>
             <div class="col">
-              <div class="row">
+              <div class="row gy-2">
                 <div class="col-md-10">
                   <input class="form-control" type="email" placeholder="give me your email" aria-label="email">
                 </div>
                 <div class="col">
-                  <button class="btn btn-primary text-white w-100" type="button">go</button>
+                  <a href="shop.html" class="btn btn-primary text-white w-100" type="button">go</a>
                 </div>
               </div>
             </div>
