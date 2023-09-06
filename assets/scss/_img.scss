@@ -1,0 +1,33 @@
+header{
+    .navbar{
+        &-brand{
+            img{
+                height: 20px;
+            }
+        }
+    }
+}
+
+footer{
+    .brand{
+        img{
+            height: 16px;
+        }
+    }
+}
+.hero{
+    background: center / cover no-repeat url(../images/days-of-our-lives.png);
+    height: calc(100vh - 54px);
+}
+.whats-news{
+    .card-img-sm{
+        width: 86px;
+        height: 86px;
+    }
+}
+.info{
+    img{
+        height: 428px;
+        object-position: 0% 80%;
+    }
+}
