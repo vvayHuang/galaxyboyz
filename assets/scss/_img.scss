@@ -16,16 +16,16 @@ footer{
     }
 }
 .hero{
-    background: center / cover no-repeat url(../images/days-of-our-lives.png);
+    background: center / cover no-repeat url(../images/days-of-our-lives-background.png);
     height: calc(100vh - 64px);
     margin-bottom: 64px;
     @include media-breakpoint-up(lg){
-        background: 0% 20% / cover no-repeat url(../images/days-of-our-lives.png);
+        background: 0% 20% / cover no-repeat url(../images/days-of-our-lives-background.png);
         height: calc(100vh - 54px);
         margin-bottom: 54px;
     }
     @include media-breakpoint-up(md){
-        background: top / cover no-repeat url(../images/days-of-our-lives.png);
+        background: top / cover no-repeat url(../images/days-of-our-lives-background.png);
     }
 }
 .whats-news{
