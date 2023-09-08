@@ -1,0 +1,9 @@
+.whats-good-music{
+    .card-img-overlay{
+        opacity: 0;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

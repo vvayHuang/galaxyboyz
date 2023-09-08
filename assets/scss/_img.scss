@@ -1,43 +1,66 @@
-header{
-    .navbar{
-        &-brand{
-            img{
+header {
+    .navbar {
+        &-brand {
+            img {
                 height: 20px;
             }
         }
     }
 }
 
-footer{
-    .brand{
-        img{
+footer {
+    .brand {
+        img {
             height: 16px;
         }
     }
 }
-.hero{
-    background: center / cover no-repeat url(../images/days-of-our-lives-background.png);
+
+.hero {
     height: calc(100vh - 64px);
     margin-bottom: 64px;
-    @include media-breakpoint-up(lg){
-        background: 0% 20% / cover no-repeat url(../images/days-of-our-lives-background.png);
+
+    @include media-breakpoint-up(lg) {
         height: calc(100vh - 54px);
         margin-bottom: 54px;
     }
-    @include media-breakpoint-up(md){
-        background: top / cover no-repeat url(../images/days-of-our-lives-background.png);
+
+    .carousel-item {
+        &:nth-child(1) {
+            .carousel-img {
+                background: center / cover no-repeat url(../images/days-of-our-lives-background.png);
+            }
+        }
+
+        &:nth-child(2) {
+            .carousel-img {
+                background: center / cover no-repeat url("../images/news/news-1.jpeg");
+                // background: center / contain no-repeat linear-gradient(45deg,rgba($red, .5),rgba($black,.8)),
+                //     $blue 35% url("../images/logo/logo-horizontal-dark.png");
+
+            }
+        }
+        &:nth-child(3) {
+            .carousel-img {
+                background: center / contain no-repeat linear-gradient(45deg,rgba($primary, .5),rgba($light,.8)),
+                    $secondary 35% url("../images/logo/logo-horizontal-dark.png");
+
+            }
+        }
     }
 }
-.whats-news{
-    .card-img-sm{
-        @include media-breakpoint-up(md){
+
+.whats-news {
+    .card-img-sm {
+        @include media-breakpoint-up(md) {
             width: 86px;
             height: 86px;
         }
     }
 }
-.info{
-    img{
+
+.info {
+    img {
         height: 428px;
         object-position: 0% 80%;
     }
