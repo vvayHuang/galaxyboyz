@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <%- include('./layout/head'); -%>
+  <title>store | GalaxyBoyz official</title>
+</head>
+
+<body>
+  <header style="z-index: 1021;"><%- include('./layout/header-light'); -%></header>
+    <main>
+      <h1 class="bg-primary display-2 fw-bold py-4 text-center text-white">store</h1>
+      <div class="container">
+        <div id="shopCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner py-2">
+            <div class="carousel-item active">
+              <p class="text-center fs-7">Limited Time Offer: Rock Your Look with Band Merch!</p>
+            </div>
+            <div class="carousel-item">
+              <p class="text-center fs-7">Exclusive Discounts on Band Gear – Grab Yours Now!</p>
+            </div>
+            <div class="carousel-item">
+              <p class="text-center fs-7">Band Merch Bonanza: Unbeatable Deals for Music Lovers!</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev justify-content-start w-auto" type="button"
+            data-bs-target="#shopCarousel" data-bs-slide="prev">
+            <i class="bi bi-chevron-left text-dark"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next justify-content-end w-auto" type="button" data-bs-target="#shopCarousel"
+            data-bs-slide="next">
+            <i class="bi bi-chevron-right text-dark"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="py-lg-10 py-md-8 py-7 overflow-hidden">
+        <div class="container">
+          <ul class="nav nav-underline justify-content-center mb-5">
+            <li class="nav-item">
+              <a class="nav-link py-md-4 py-2 text-center" href="#cd"><i class="bi bi-disc fs-3 d-block"></i>cd</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-md-4 py-2 text-center" href="#vinyl"><i class="bi bi-vinyl-fill fs-3 d-block"></i>vinyl</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-md-4 py-2 text-center" href="#"><i class="bi bi-cassette fs-3 d-block"></i>tapes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-md-4 py-2 text-center" href="#clothing"><i class="bi bi-person-fill fs-3 d-block"></i>clothing</a>
+            </li>
+          </ul>
+          <%- include('./layout/swiper-store'); -%>
+        </div>
+      </div>
+     
+    </main>
+    <%- include('./layout/footer'); -%>
+    <%- include('./layout/modal-store-faq'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+
+</html>

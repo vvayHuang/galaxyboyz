@@ -17,12 +17,12 @@ footer {
 }
 
 .hero {
-    height: calc(100vh - 64px);
-    margin-bottom: 64px;
+    height: calc(100vh - 62px);
+    margin-bottom: 62px;
 
     @include media-breakpoint-up(lg) {
-        height: calc(100vh - 54px);
-        margin-bottom: 54px;
+        height: calc(100vh - 52px);
+        margin-bottom: 52px;
     }
 
     .carousel-item {

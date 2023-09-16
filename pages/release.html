@@ -2,46 +2,48 @@
 <html lang="zh-TW">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%- include('./layout/head'); -%>
   <title>release | GalaxyBoyz official</title>
 </head>
 
 <body>
-  <%- include('./layout/header-light'); -%>
+ <header style="z-index: 1021;"> <%- include('./layout/header-light'); -%></header>
     <main>
       <h1 class="bg-primary display-2 fw-bold py-4 text-center text-white">release</h1>
-      <div class="py-10">
+      <div class="py-lg-10 py-md-8 py-7">
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
-              <h2 class="fs-1">LATEST RELEASE</h2>
+              <h2 class="d-md-block d-none fs-1">LATEST RELEASE</h2>
             </div>
             <div class="col">
               <div class="card">
                 <div class="row g-0 row-cols-1 row-cols-md-2">
-                  <div class="col">
-                    <img src="../assets/images/release/days-of-our-lives.png" class="img-fluid" alt="days-of-our-lives">
+                  <div class="col position-relative">
+                    <img src="../assets/images/release/days-of-our-lives.png" class="h-lg-100 img-fluid object-fit-cover mb-4 mb-md-0"
+                      alt="Days Of Our Lives">
+                    <a href="music.html" class="stretched-link"></a>
                   </div>
                   <div class="col">
-                    <div class="card-body d-flex flex-column h-100 justify-content-between p-0 ps-5">
+                    <div class="card-body d-flex flex-column h-100 justify-content-between p-0 ms-md-5">
                       <div>
-                        <h3 class="card-title mb-5 fs-1">Days Of Our Lives</h3>
-                        <ol class="list-group list-group-numbered">
-                          <li class="list-group-item border-0 p-0">Sunrise Serenade</li>
-                          <li class="list-group-item border-0 p-0">Memories in Motion</li>
-                          <li class="list-group-item border-0 p-0">Echoes of Laughter</li>
-                          <li class="list-group-item border-0 p-0">Moments in Bloom</li>
-                          <li class="list-group-item border-0 p-0">Whispers of Tomorrow</li>
-                          <li class="list-group-item border-0 p-0">Chasing Rainbows</li>
-                          <li class="list-group-item border-0 p-0">Dancing Through Time</li>
-                          <li class="list-group-item border-0 p-0">Fading Twilight</li>
-                          <li class="list-group-item border-0 p-0">Footprints in the Sand</li>
-                          <li class="list-group-item border-0 p-0">The Journey Within</li>
+                        <h3 class="card-title fs-1 text-center text-md-start"><a
+                            class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary"
+                            href="music.html">Days Of Our Lives</a></h3>
+                        <ol class="list-group list-group-numbered mb-5 d-none d-md-block">
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Sunrise Serenade</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Memories in Motion</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Echoes of Laughter</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Moments in Bloom</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Whispers of Tomorrow</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Chasing Rainbows</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Dancing Through Time</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Fading Twilight</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">Footprints in the Sand</li>
+                          <li class="list-group-item border-0 px-0 pt-0 pb-1">The Journey Within</li>
                         </ol>
                       </div>
-                      <small>released November 11, 2023</small>
+                      <small class="text-center text-md-start">released November 11, 2023</small>
                     </div>
                   </div>
                 </div>
@@ -54,27 +56,33 @@
         <div class="container">
           <ul class="nav nav-underline" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link p-4 active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">all</button>
+              <button class="nav-link p-md-4 p-2 active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+                type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">all</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link p-4" id="album-tab" data-bs-toggle="tab" data-bs-target="#album-tab-pane" type="button" role="tab" aria-controls="album-tab-pane" aria-selected="false">album</button>
+              <button class="nav-link p-md-4 p-2" id="album-tab" data-bs-toggle="tab" data-bs-target="#album-tab-pane"
+                type="button" role="tab" aria-controls="album-tab-pane" aria-selected="false">album</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link p-4" id="ep-tab" data-bs-toggle="tab" data-bs-target="#ep-tab-pane" type="button" role="tab" aria-controls="ep-tab-pane" aria-selected="false">ep</button>
+              <button class="nav-link p-md-4 p-2" id="ep-tab" data-bs-toggle="tab" data-bs-target="#ep-tab-pane" type="button"
+                role="tab" aria-controls="ep-tab-pane" aria-selected="false">ep</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link p-4" id="single-tab" data-bs-toggle="tab" data-bs-target="#single-tab-pane" type="button" role="tab" aria-controls="single-tab-pane" aria-selected="false">single</button>
+              <button class="nav-link p-md-4 p-2" id="single-tab" data-bs-toggle="tab" data-bs-target="#single-tab-pane"
+                type="button" role="tab" aria-controls="single-tab-pane" aria-selected="false">single</button>
             </li>
           </ul>
         </div>
       </div>
-      <div class="pt-lg-3 pb-lg-10">
+      <div class="pt-lg-3 pb-10">
         <div class="tab-content container" id="myTabContent">
-          <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
-            <ul class="row list-unstyled row-cols-lg-4 mb-0">
+          <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab"
+            tabindex="0">
+            <ul class="gy-4 list-unstyled mb-0 row row-cols-2 row-cols-lg-4 row-cols-md-3">
               <li class="col">
                 <div class="card">
-                  <img src="../assets/images/stellar-resonance.png" class="card-img-top" alt="...">
+                  <img src="../assets/images/release/stellar-resonance.png" class="card-img-top"
+                    alt="Stellar Resonance">
                   <div class="card-body p-0 py-2">
                     <h5 class="card-title fs-4 mb-0">Stellar Resonance</h5>
                     <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2023 · single</p>
@@ -86,10 +94,123 @@
               </li>
               <li class="col">
                 <div class="card">
-                  <img src="../assets/images/stellar-resonance.png" class="card-img-top" alt="...">
+                  <img src="../assets/images/release/cosmic-riffs-and-melodies.png" class="card-img-top"
+                    alt="Cosmic Riffs and Melodies">
                   <div class="card-body p-0 py-2">
-                    <h5 class="card-title fs-4 mb-0">Stellar Resonance</h5>
+                    <h5 class="card-title fs-4 mb-0">Cosmic Riffs and Melodies</h5>
                     <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2023 · single</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/galactic-groove-odyssey.png" class="card-img-top"
+                    alt="Galactic Groove Odyssey">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Galactic Groove Odyssey</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2022 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/nebula-serenades.png" class="card-img-top" alt="Nebula Serenades">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Nebula Serenades</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2022 · ep</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/eclipse-of-sound.png" class="card-img-top" alt="Eclipse of Sound">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Eclipse of Sound</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2022 · single</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/astral-harmony-chronicles.png" class="card-img-top"
+                    alt="Astral Harmony Chronicles">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Astral Harmony Chronicles</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2021 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/celestial-echoes.png" class="card-img-top" alt="Celestial Echoes">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Celestial Echoes</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2021 · ep</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/interstellar-anthem.png" class="card-img-top"
+                    alt="Interstellar Anthem">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Interstellar Anthem</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2021 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/eternal-echoes.png" class="card-img-top"
+                    alt="eternal echoes">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Eternal Echoes</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2020 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/neon-dreamscape.png" class="card-img-top" alt="neon dreamscape">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Neon Dreamscape</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2020 · ep</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/whispers-of-serenity.png" class="card-img-top" alt="whispers of serenity">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Whispers of Serenity</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2019 · album</p>
                     <a href="#" class="stretched-link">
                       <span class="visually-hidden">music link</span>
                     </a>
@@ -98,15 +219,201 @@
               </li>
             </ul>
           </div>
-          <div class="tab-pane fade" id="album-tab-pane" role="tabpanel" aria-labelledby="album-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="ep-tab-pane" role="tabpanel" aria-labelledby="ep-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="single-tab-pane" role="tabpanel" aria-labelledby="single-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="album-tab-pane" role="tabpanel" aria-labelledby="album-tab" tabindex="0">
+            <ul class="gy-4 list-unstyled mb-0 row row-cols-2 row-cols-lg-4 row-cols-md-3">
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/galactic-groove-odyssey.png" class="card-img-top"
+                    alt="Galactic Groove Odyssey">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Galactic Groove Odyssey</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2022 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/astral-harmony-chronicles.png" class="card-img-top"
+                    alt="Astral Harmony Chronicles">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Astral Harmony Chronicles</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2021 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/interstellar-anthem.png" class="card-img-top"
+                    alt="Interstellar Anthem">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Interstellar Anthem</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2021 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/eternal-echoes.png" class="card-img-top"
+                    alt="eternal echoes">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Eternal Echoes</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2020 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/whispers-of-serenity.png" class="card-img-top" alt="whispers of serenity">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Whispers of Serenity</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2019 · album</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="ep-tab-pane" role="tabpanel" aria-labelledby="ep-tab" tabindex="0">
+            <ul class="gy-4 list-unstyled mb-0 row row-cols-2 row-cols-lg-4 row-cols-md-3">
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/nebula-serenades.png" class="card-img-top" alt="Nebula Serenades">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Nebula Serenades</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2022 · ep</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/celestial-echoes.png" class="card-img-top" alt="Celestial Echoes">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Celestial Echoes</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2021 · ep</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/harmony-s-embrace.png" class="card-img-top" alt="harmonys embrace">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Harmony's Embrace</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2020 · ep</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/neon-dreamscape.png" class="card-img-top" alt="neon dreamscape">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Neon Dreamscape</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2020 · ep</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="single-tab-pane" role="tabpanel" aria-labelledby="single-tab" tabindex="0">
+            <ul class="gy-4 list-unstyled mb-0 row row-cols-2 row-cols-lg-4 row-cols-md-3">
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/stellar-resonance.png" class="card-img-top"
+                    alt="Stellar Resonance">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Stellar Resonance</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2023 · single</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/cosmic-riffs-and-melodies.png" class="card-img-top"
+                    alt="Cosmic Riffs and Melodies">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Cosmic Riffs and Melodies</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2023 · single</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/galactic-groove-odyssey.png" class="card-img-top"
+                    alt="Galactic Groove Odyssey">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Galactic Groove Odyssey</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2022 · single</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/eclipse-of-sound.png" class="card-img-top" alt="Eclipse of Sound">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Eclipse of Sound</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2022 · single</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <img src="../assets/images/release/astral-harmony-chronicles.png" class="card-img-top"
+                    alt="Astral Harmony Chronicles">
+                  <div class="card-body p-0 py-2">
+                    <h5 class="card-title fs-4 mb-0">Astral Harmony Chronicles</h5>
+                    <p class="card-text lh-sm font-family-Yanone-Kaffeesatz">2021 · single</p>
+                    <a href="#" class="stretched-link">
+                      <span class="visually-hidden">music link</span>
+                    </a>
+                  </div>
+                </div>
+              </li> 
+            </ul>
+          </div>
         </div>
       </div>
     </main>
     <%- include('./layout/footer'); -%>
+      <%- include('./layout/modal-music-day-of-our-lives'); -%>
 
-      <script type="module" src="../main.js"></script>
+        <script type="module" src="../main.js"></script>
 </body>
 
 </html>

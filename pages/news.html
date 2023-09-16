@@ -2,14 +2,12 @@
 <html lang="zh-TW">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%- include('./layout/head'); -%>
   <title>news | GalaxyBoyz official</title>
 </head>
 
 <body>
-  <%- include('./layout/header-light'); -%>
+  <header style="z-index: 1021;"><%- include('./layout/header-light'); -%></header>
     <main>
       <section>
         <h1 class="bg-primary display-2 fw-bold py-4 text-center text-white">news</h1>
@@ -18,15 +16,18 @@
             <div class="card text-bg-light">
               <div class="flex-column-reverse flex-md-row gx-lg-0 row row-cols-md-2">
                 <div class="col-lg-5">
-                  <div class="card-body d-flex flex-column h-100 justify-content-between p-0">
+                  <div class="card-body d-flex flex-column h-100 justify-content-between p-lg-0">
                     <p class="card-text fw-semibold font-YanoneKaffeesatz">December 31, 2023</p>
                     <h2 class="card-title fs-1 text-dark">GalaxyBoyz Launches Stellar World Tour</h2>
-                    <p class="card-text">The cosmic journey begins as GalaxyBoyz announces their world tour, promising an out-of-this-world musical experience that transcends boundaries.</p>
-                    <a href="post.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
+                    <p class="card-text">The cosmic journey begins as GalaxyBoyz announces their world tour, promising
+                      an out-of-this-world musical experience that transcends boundaries.</p>
+                    <a href="post.html"
+                      class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
                   </div>
                 </div>
                 <div class="col-lg-7">
-                  <img src="../assets/images/news/news-1.jpeg" class="img-fluid object-fit-cover w-100" alt="GalaxyBoyz Launches Stellar World Tour" style="max-height: 316px;">
+                  <img src="../assets/images/news/news-1.jpeg" class="img-fluid object-fit-cover w-100 h-md-100"
+                    alt="GalaxyBoyz Launches Stellar World Tour" style="max-height: 316px;">
                 </div>
               </div>
             </div>
@@ -34,48 +35,65 @@
         </div>
         <div class="py-lg-10 py-md-8 py-7">
           <div class="container">
-            <ul class="gy-5 gy-lg-8 list-unstyled row row-cols-1 row-cols-lg-2">
+            <ul class="gy-5 gy-lg-8 list-unstyled row row-cols-1 row-cols-md-2">
               <li class="col">
-                <div class="card">
+                <div class="card h-100">
                   <p class="card-text font-YanoneKaffeesatz">December 12, 2023</p>
-                  <h3 class="card-title fs-2 text-dark mb-0">Intergalactic Album Release: 'Stellar Odyssey' Takes Off</h3>
-                  <img src="../assets/images/news/news-2.jpeg" class="card-img-top" alt="Intergalactic Album Release: 'Stellar Odyssey' Takes Off">
-                  <div class="card-body p-0 pt-4">
-                    <p class="card-text mb-lg-5">The wait is over! GalaxyBoyz's highly anticipated album 'Stellar Odyssey' has finally hit the airwaves, inviting listeners on a breathtaking sonic journey through the cosmos. With tracks that range from ethereal ballads to pulsating anthems, the album explores the vast spectrum of human emotions, making it a celestial addition to any music lover's collection.</p>
-                    <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
+                  <h3 class="card-title fs-2 text-dark mb-0">Intergalactic Album Release: 'Stellar Odyssey' Takes Off
+                  </h3>
+                  <img src="../assets/images/news/news-2.jpeg" class="card-img-top"
+                    alt="Intergalactic Album Release: 'Stellar Odyssey' Takes Off">
+                  <div class="card-body p-0 pt-4 d-flex flex flex-column">
+                    <p class="card-text flex-grow-1 mb-lg-5">The wait is over! GalaxyBoyz's highly anticipated album
+                      'Stellar Odyssey' has finally hit the airwaves, inviting listeners on a breathtaking sonic journey
+                      through the cosmos.</p>
+                    <a href="#"
+                      class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
                   </div>
                 </div>
               </li>
               <li class="col">
-                <div class="card">
+                <div class="card h-100">
                   <p class="card-text font-YanoneKaffeesatz">December 7, 2023</p>
-                  <h3 class="card-title fs-2 text-dark mb-0">Starlit Collaboration:GalaxyBoyz Teams Up with Celestial Vocalist</h3>
-                  <img src="../assets/images/news/news-3.jpeg" class="card-img-top" alt="Starlit Collaboration:GalaxyBoyz Teams Up with Celestial Vocalist">
-                  <div class="card-body p-0 pt-4">
-                    <p class="card-text mb-lg-5">Prepare for a celestial duet as GalaxyBoyz announces a collaboration with a renowned celestial vocalist. This musical union promises to create a unique blend of ethereal and earthly voices that will resonate across galaxies. Fans are eagerly awaiting the ethereal symphony that will emerge from this cosmic partnership.</p>
-                    <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
+                  <h3 class="card-title fs-2 text-dark mb-0">Starlit Collaboration:GalaxyBoyz Teams Up with Celestial
+                    Vocalist</h3>
+                  <img src="../assets/images/news/news-3.jpeg" class="card-img-top"
+                    alt="Starlit Collaboration:GalaxyBoyz Teams Up with Celestial Vocalist">
+                  <div class="card-body p-0 pt-4 d-flex flex-column">
+                    <p class="card-text mb-lg-5 flex-grow-1">Prepare for a celestial duet as GalaxyBoyz announces a
+                      collaboration with a renowned celestial vocalist.</p>
+                    <a href="#"
+                      class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
                   </div>
                 </div>
               </li>
               <li class="col">
-                <div class="card">
+                <div class="card h-100">
                   <p class="card-text font-YanoneKaffeesatz">November 1, 2023</p>
-                  <h3 class="card-title fs-2 text-dark mb-0">CosmicCharityConcert:GalaxyBoyz Lights Up the Stage for aCause</h3>
-                  <img src="../assets/images/news/news-4.jpeg" class="card-img-top" alt="CosmicCharityConcert:GalaxyBoyz Lights Up the Stage for aCause">
-                  <div class="card-body p-0 pt-4">
-                    <p class="card-text mb-lg-5">Harnessing their positive energy for a greater good, GalaxyBoyz is set to illuminate a charitable event with their electrifying performance. The band's dedication to making a difference through their music will shine as they take the stage, using their cosmic tunes to raise funds and awareness for a worthy cause.</p>
-                    <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
+                  <h3 class="card-title fs-2 text-dark mb-0">CosmicCharityConcert:GalaxyBoyz Lights Up the Stage for
+                    aCause</h3>
+                  <img src="../assets/images/news/news-4.jpeg" class="card-img-top"
+                    alt="CosmicCharityConcert:GalaxyBoyz Lights Up the Stage for aCause">
+                  <div class="card-body p-0 pt-4 d-flex flex-column">
+                    <p class="card-text mb-lg-5 flex-grow-1">Harnessing their positive energy for a greater good,
+                      GalaxyBoyz is set to illuminate a charitable event with their electrifying performance.</p>
+                    <a href="#"
+                      class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
                   </div>
                 </div>
               </li>
               <li class="col">
-                <div class="card">
+                <div class="card h-100">
                   <p class="card-text font-YanoneKaffeesatz">October 1, 2023</p>
-                  <h3 class="card-title fs-2 text-dark mb-0">Galactic Grooves: GalaxyBoyz Set to Headline Major Music Festival</h3>
-                  <img src="../assets/images/news/news-5.jpeg" class="card-img-top" alt="Galactic Grooves: GalaxyBoyz Set to Headline Major Music Festival">
-                  <div class="card-body p-0 pt-4">
-                    <p class="card-text mb-lg-5">Music enthusiasts are in for a treat as GalaxyBoyz is unveiled as the headlining act for a prominent music festival. With their reputation for delivering electrifying performances that blend genres and ignite dance floors, the festival is primed for a night of musical magic that will leave attendees with a memory to last a lifetime.</p>
-                    <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
+                  <h3 class="card-title fs-2 text-dark mb-0">Galactic Grooves: GalaxyBoyz Set to Headline Major Music
+                    Festival</h3>
+                  <img src="../assets/images/news/news-5.jpeg" class="card-img-top"
+                    alt="Galactic Grooves: GalaxyBoyz Set to Headline Major Music Festival">
+                  <div class="card-body p-0 pt-4 d-flex flex-column">
+                    <p class="card-text mb-lg-5 flex-grow-1">Music enthusiasts are in for a treat as GalaxyBoyz is
+                      unveiled as the headlining act for a prominent music festival.</p>
+                    <a href="#"
+                      class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
                   </div>
                 </div>
               </li>
@@ -85,17 +103,23 @@
         <div class="py-lg-10 py-md-8 py-7 bg-light">
           <div class="container">
             <div class="card text-bg-light">
-              <div class="flex-lg-row-reverse gx-lg-0 row">
+              <div class="flex-column-reverse flex-md-row gx-lg-0 row row-cols-md-2">
                 <div class="col-lg-5">
-                  <div class="card-body d-flex flex-column h-100 justify-content-between p-0 ms-lg-5">
+                  <div class="card-body d-flex flex-column h-100 justify-content-between p-lg-0">
                     <p class="card-text fw-semibold font-YanoneKaffeesatz">Jul 6, 2023</p>
-                    <h2 class="card-title fs-1 text-dark">GalVirtual Constellation: GalaxyBoyz's Epic Livestream Concert Connects Fans Worldwide</h2>
-                    <p class="card-text">Breaking geographical boundaries, GalaxyBoyz is all set to deliver a mesmerizing virtual concert that unites fans across the globe in a celestial musical experience. The virtual constellation promises an interactive performance, making listeners feel like they're right there among the stars.</p>
-                    <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
+                    <h2 class="card-title fs-1 text-dark">GalVirtual Constellation: GalaxyBoyz's Epic Livestream Concert
+                      Connects Fans Worldwide</h2>
+                    <p class="card-text">GalaxyBoyz is all set to deliver a
+                      mesmerizing virtual concert that unites fans across the globe in a celestial musical experience.
+                    </p>
+                    <a href="#"
+                      class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary">read</a>
                   </div>
                 </div>
                 <div class="col-lg-7">
-                  <img src="../assets/images/news/news-6.jpeg" class="img-fluid object-fit-cover w-100" alt="GalVirtual Constellation: GalaxyBoyz's Epic Livestream Concert Connects Fans Worldwide" style="max-height: 316px;">
+                  <img src="../assets/images/news/news-6.jpeg" class="img-fluid object-fit-cover w-100 h-md-100"
+                    alt="GalVirtual Constellation: GalaxyBoyz's Epic Livestream Concert Connects Fans Worldwide"
+                    style="max-height: 316px;">
                 </div>
               </div>
             </div>
@@ -104,18 +128,17 @@
         <div class="py-lg-10 py-md-8 py-7">
           <h2 class="display-2 fw-bold py-4 text-center">blog</h2>
           <div class="container">
-            <ul class="gy-4 gy-lg-5 list-unstyled mb-0 row row-cols-1 row-cols-lg-2">
+            <ul class="gy-4 gy-lg-5 list-unstyled mb-0 row row-cols-1 row-cols-md-2 row-cols-lg-3">
               <li class="col">
                 <div class="card">
                   <div class="card-body p-0 py-4">
                     <div class="mb-5">
-                      <h3 class="card-title mb-0 text-dark fs-5">I lost my wallet, please help me 😫</h3>
-                      <h4 class="card-text fw-semibold fs-6">May 5, 2021</h4>
+                      <h3 class="card-title mb-0"><a
+                          class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          href="#">grand open</a></h3>
+                      <p class="card-text fw-semibold fs-6">Sep 10, 2023</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                      <p class="card-text fs-7">Day 3: Wallet MIA! SOS! Who knew shopping could turn into a treasure hunt? 🕵️‍♂️</p>
-                      <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary fs-7">read</a>
-                    </div>
+                    <p class="card-text fs-7">everything almost ready, time to change 🕵️‍♂️</p>
                   </div>
                 </div>
               </li>
@@ -123,13 +146,13 @@
                 <div class="card">
                   <div class="card-body p-0 py-4">
                     <div class="mb-5">
-                      <h3 class="card-title mb-0 text-dark fs-5">bad bad bad badbad bad trip</h3>
-                      <h4 class="card-text fw-semibold fs-6">March 3, 2021</h4>
+                      <h3 class="card-title mb-0"><a
+                          class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          href="#">I lost my wallet, please help me 😫</a></h3>
+                      <p class="card-text fw-semibold fs-6">May 5, 2021</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                      <p class="card-text fs-7">Note to Self: Never trust GPS-blindfolded llama tours again. Worst. Trip. Ever. 🦙🌵</p>
-                      <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary fs-7">read</a>
-                    </div>
+                    <p class="card-text fs-7">Day 3: Wallet MIA! SOS! Who knew shopping could turn into a treasure hunt?
+                      🕵️‍♂️</p>
                   </div>
                 </div>
               </li>
@@ -137,13 +160,13 @@
                 <div class="card">
                   <div class="card-body p-0 py-4">
                     <div class="mb-5">
-                      <h3 class="card-title mb-0 text-dark fs-5">I lost my job</h3>
-                      <h4 class="card-text fw-semibold fs-6">January 27, 2021</h4>
+                      <h3 class="card-title mb-0"><a
+                          class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          href="#">bad bad bad badbad bad trip</a></h3>
+                      <p class="card-text fw-semibold fs-6">March 3, 2021</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                      <p class="card-text fs-7">Dear Diary, Today my job decided to ghost me. Time to upgrade life's playlist! 🎵🕺</p>
-                      <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary fs-7">read</a>
-                    </div>
+                    <p class="card-text fs-7">Note to Self: Never trust GPS-blindfolded llama tours again. Worst. Trip.
+                      Ever. 🦙🌵</p>
                   </div>
                 </div>
               </li>
@@ -151,13 +174,13 @@
                 <div class="card">
                   <div class="card-body p-0 py-4">
                     <div class="mb-5">
-                      <h3 class="card-title mb-0 text-dark fs-5">I got my job</h3>
-                      <h4 class="card-text fw-semibold fs-6">January 20, 2021</h4>
+                      <h3 class="card-title mb-0"><a
+                          class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          href="#">I lost my job</a></h3>
+                      <p class="card-text fw-semibold fs-6">January 27, 2021</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                      <p class="card-text fs-7">Entry #1: Confetti dance! Snagged the job – officially adulting like a pro now. 🎉💼</p>
-                      <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary fs-7">read</a>
-                    </div>
+                    <p class="card-text fs-7">Dear Diary, Today my job decided to ghost me. Time to upgrade life's
+                      playlist! 🎵🕺</p>
                   </div>
                 </div>
               </li>
@@ -165,13 +188,13 @@
                 <div class="card">
                   <div class="card-body p-0 py-4">
                     <div class="mb-5">
-                      <h3 class="card-title mb-0 text-dark fs-5">Lost Wallet Chronicles</h3>
-                      <h4 class="card-text fw-semibold fs-6">January 2, 2021</h4>
+                      <h3 class="card-title mb-0"><a
+                          class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          href="#">I got my job</a></h3>
+                      <p class="card-text fw-semibold fs-6">January 20, 2021</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                      <p class="card-text fs-7">Day 5: Wallet's Great Escape. Retracing steps, hoping for a miracle.</p>
-                      <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary fs-7">read</a>
-                    </div>
+                    <p class="card-text fs-7">Entry #1: Confetti dance! Snagged the job – officially adulting like a pro
+                      now. 🎉💼</p>
                   </div>
                 </div>
               </li>
@@ -179,12 +202,28 @@
                 <div class="card">
                   <div class="card-body p-0 py-4">
                     <div class="mb-5">
-                      <h3 class="card-title mb-0 text-dark fs-5">Misadventures in Traveland</h3>
-                      <h4 class="card-text fw-semibold fs-6">July 29, 2020</h4>
+                      <h3 class="card-title mb-0"><a
+                          class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          href="#">Lost Wallet Chronicles</a>
+                      </h3>
+                      <p class="card-text fw-semibold fs-6">January 2, 2021</p>
+                    </div>
+                    <p class="card-text fs-7">Day 5: Wallet's Great Escape. Retracing steps, hoping for a miracle.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="col">
+                <div class="card">
+                  <div class="card-body p-0 py-4">
+                    <div class="mb-5">
+                      <h3 class="card-title mb-0"><a
+                          class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                          href="#">Misadventures in Traveland</a>
+                      </h3>
+                      <p class="card-text fw-semibold fs-6">July 29, 2020</p>
                     </div>
                     <div class="d-flex justify-content-between">
                       <p class="card-text fs-7">Memoir of a Comedy of Errors. Note to self: GPS is not an oracle.</p>
-                      <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary fs-7">read</a>
                     </div>
                   </div>
                 </div>
@@ -193,13 +232,14 @@
                 <div class="card">
                   <div class="card-body p-0 py-4">
                     <div class="mb-5">
-                      <h3 class="card-title mb-0 text-dark fs-5">New Beginnings Journal</h3>
-                      <h4 class="card-text fw-semibold fs-6">June 6, 2020</h4>
+                      <h3 class="card-title mb-0"><a
+                        class="link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                        href="#">New Beginnings Journal</a>
+                    </h3>
+                      <p class="card-text fw-semibold fs-6">June 6, 2020</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                      <p class="card-text fs-7">Chapter 1: Farewell, Old Job. Embracing uncertainty with a hint of excitement.</p>
-                      <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-primary fs-7">read</a>
-                    </div>
+                    <p class="card-text fs-7">Chapter 1: Farewell, Old Job. Embracing uncertainty with a hint of
+                      excitement.</p>
                   </div>
                 </div>
               </li>

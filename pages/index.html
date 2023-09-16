@@ -2,10 +2,7 @@
 <html lang="zh-TW">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <%- include('./layout/head'); -%>
   <title>GalaxyBoyz official</title>
 </head>
 
@@ -14,20 +11,20 @@
     <section class="hero">
       <div id="carouselExampleSlidesOnly" class="carousel slide h-100 carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner h-100">
-          <div class="h-100 carousel-item" data-bs-interval="4000">
+          <div class="h-100 carousel-item active" data-bs-interval="3000">
             <div class="align-items-center d-flex flex-column h-100 justify-content-center carousel-img">
               <h2 class="fs-1 mb-5 fw-normal">the new record out now</h2>
               <h1 class="display-1 fw-bold mb-5">Days Of Our Lives</h1>
               <a href="music.html" class="btn btn-dark col-auto col-md-3 d-grid mx-auto">buy / listen</a>
             </div>
           </div>
-          <div class="h-100 carousel-item" data-bs-interval="4000">
+          <div class="h-100 carousel-item" data-bs-interval="3000">
             <div class="align-items-center carousel-img d-flex flex-column h-100 justify-content-center px-7 px-lg-0 px-md-9">
               <h2 class="fs-1 fw-bold lh-1 mb-5 text-bg-primary">Virtual Constellation: GalaxyBoyz's Epic Livestream Concert Connects Fans Worldwide</h2>
               <a href="post.html" class="btn btn-dark col-auto col-md-3 d-grid mx-auto">read more</a>
             </div>
           </div>
-          <div class="h-100 carousel-item active" data-bs-interval="4000">
+          <div class="h-100 carousel-item" data-bs-interval="3000">
             <div class="align-items-center carousel-img d-flex flex-column h-100 justify-content-center px-7 px-lg-0 px-md-9">
               <h2 class="display-1 fw-bold lh-1 mb-5 text-bg-primary text-uppercase">grand open </h2>
               <p class="font-YanoneKaffeesatz fs-1 fw-bold lh-1 mb-5 text-bg-primary">GalaxyBoyz official </p>
@@ -35,7 +32,7 @@
           </div>
         </div>
       </div>
-      <%- include('./layout/header-dark'); -%>
+      <header id="navbar-dark"><%- include('./layout/header-dark'); -%></header>
     </section>
     <section class="whats-news py-7 py-lg-10 py-md-8">
       <div class="container">
@@ -409,7 +406,7 @@
             </div>
           </li>
         </ul>
-        <button class="btn btn-primary d-grid col-12 col-lg-2 col-md-4 mx-auto text-white mb-8">more</button>
+        <a href="shop.html" class="btn btn-primary d-grid col-12 col-lg-2 col-md-4 mx-auto text-white mb-8">more</a>
         <div class="align-items-end row pt-5 pb-8 row-cols-1 row-cols-lg-2 gy-5">
           <div class="col">
             <h3 class="fs-1">SUBSCRIBE</h3>
@@ -421,7 +418,7 @@
                 <input class="form-control" type="email" placeholder="give me your email" aria-label="email">
               </div>
               <div class="col">
-                <a href="shop.html" class="btn btn-primary text-white w-100" type="button">go</a>
+                <button class="btn btn-primary text-white w-100" type="button">go</button>
               </div>
             </div>
           </div>
@@ -432,7 +429,7 @@
   <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/navbar.js"></script>
 </body>
 
 </html>
