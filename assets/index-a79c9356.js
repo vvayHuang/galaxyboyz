@@ -1,0 +1,1 @@
+import"./bootstrap.bundle-21df8ddd.js";window.onscroll=function(){e()};var a=document.getElementById("navbar-dark"),t=document.getElementById("navbar"),o=a.offsetTop;function e(){window.scrollY>=o?(a.classList.add("fixed-top"),t.classList.add("bg-opacity-85")):(a.classList.remove("fixed-top"),t.classList.remove("bg-opacity-85"))}
