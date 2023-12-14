@@ -12,9 +12,9 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.scrollY >= sticky) {
     navbar.classList.add("fixed-top")
-    navbarNav.classList.add("bg-opacity-75")
+    navbarNav.classList.add("bg-opacity-85")
   } else {
     navbar.classList.remove("fixed-top")
-    navbarNav.classList.remove("bg-opacity-75")
+    navbarNav.classList.remove("bg-opacity-85")
   }
 }
